@@ -8,3 +8,6 @@
 docker login
 docker push <hub-user>/<repo-name>:<tag>
 ~~~
+* To scale up we need to edit scale parameter to desire size of the nginx or app01/02 kubernetes deployment yaml
+* Alternatively we can run kubectl command to scale the target deployemnt 
+`kubectl scale --replicas=<expected_replica_num> deployment <deployment_label_name> -n <namespace>`
